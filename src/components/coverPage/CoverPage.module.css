@@ -1,6 +1,6 @@
 
 .coverText {
-    padding: 50px 18%;
+    padding: 50px 18% 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,6 +19,7 @@
 
 .text h3 {
     font-size: 25px;
+    color: white;
 }
 
 #name {
@@ -53,28 +54,49 @@
 
     .coverText {
         justify-content: center;
-        gap: 40px;
+        gap: 30px;
         text-align: center;
+        padding-top: 20px;
     }
 
     .text {
         width: 90%;
     }
 
-    .coverText img {
-        width: 60%;
+
+    #name {
+        font-size: 45px;
+        font-weight: 700;
     }
+
+    #typewriter {
+        font-size: 20px;
+    }
+
+    .text h3 {
+        font-size: 20px;
+    }
+
 }
 
 @media screen and (max-width: 730px) {
 
     .coverText {
-        padding: 50px 5%;
+        padding: 50px 3%;
         overflow: hidden;
     }
 
     .text {
-        max-width: 100%;
+        max-width: 80%;
+    }
+
+    #name {
+        padding: 0;
+    }
+
+
+    .coverText img {
+        width: 40%;
     }
 }
 
@@ -82,7 +104,6 @@
 
     .text {
         width: 90%;
-        border: 2px solid red;
     }
 
     .text h3 {

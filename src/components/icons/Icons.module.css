@@ -1,0 +1,28 @@
+
+.iconsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 80%;
+}
+
+
+.iconsContainer img {
+    width: 7%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .iconsContainer img {
+        width: 9%;
+        
+    }
+
+    .iconsContainer {
+        text-align: center;
+        justify-content: center;
+        margin: 10px auto;
+    }
+}

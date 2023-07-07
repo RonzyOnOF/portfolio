@@ -1,6 +1,7 @@
 import styles from './Home.module.css';
 import { Navbar } from '../../components/navbar/Navbar';
 import { CoverPage } from '../../components/coverPage/CoverPage';
+import { About } from '../about/About';
 
 export const Home = () => {
     return (
@@ -9,6 +10,7 @@ export const Home = () => {
                 <Navbar />
                 <CoverPage />
             </div>
+            <About />
         </> 
     )
 }

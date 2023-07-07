@@ -1,0 +1,67 @@
+
+.aboutContainer {
+    padding-top: 80px;
+}
+
+
+.aboutContainer h3 {
+    text-align: center;
+}
+
+#mePicture {
+    border-radius: 15px;
+    width: 20%;
+}
+
+.textContainer {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    padding: 10px 15px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.aboutText {
+    width: 70%;
+}
+
+
+@media screen and (max-width: 850px) {
+
+    .aboutSkills {
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .aboutText {
+        margin: auto;
+        width: 90%;
+    }
+
+    .textContainer {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+
+    #mePicture {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 675px) {
+
+    #mePicture {
+        width: 40%;
+    }
+}

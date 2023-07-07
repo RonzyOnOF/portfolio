@@ -1,7 +1,9 @@
 
 .homeContainer {
     background-color: #041d3d;
-    min-height: 100vh;
+    height: 100vh;
     color: white;
-    padding-bottom: 100px;
+    padding-bottom: 500px;
 }
+
+

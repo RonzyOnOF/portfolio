@@ -33,10 +33,10 @@ export const Navbar = () => {
             <nav className={styles.navBar}>
                 <h1 id={styles.name}>JSDev</h1>
                 <ul className={isClicked ? styles.listActive : styles.list}>
-                    <a><li>Home</li></a>
-                    <a><li>About</li></a>
-                    <a><li>Projects</li></a>
-                    <a><li>Contact</li></a>
+                    <a href='#'><li>Home</li></a>
+                    <a href='#about'><li>About</li></a>
+                    <a href='#'><li>Projects</li></a>
+                    <a href='#'><li>Contact</li></a>
                 </ul>
                 <a className={styles.toggleButton} onClick={toggleClick}>
                     <span className={styles.bar}></span>
