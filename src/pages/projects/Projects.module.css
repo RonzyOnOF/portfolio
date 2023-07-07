@@ -1,0 +1,11 @@
+.projectsContainer {
+    margin: 150px auto;
+}
+
+.projectsContainer h3 {
+    text-align: center;
+}
+
+#project {
+    border-radius: 5px;
+}

@@ -35,7 +35,7 @@ export const Navbar = () => {
                 <ul className={isClicked ? styles.listActive : styles.list}>
                     <a href='#'><li>Home</li></a>
                     <a href='#about'><li>About</li></a>
-                    <a href='#'><li>Projects</li></a>
+                    <a href='#projects'><li>Projects</li></a>
                     <a href='#'><li>Contact</li></a>
                 </ul>
                 <a className={styles.toggleButton} onClick={toggleClick}>

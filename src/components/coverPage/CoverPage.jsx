@@ -16,7 +16,7 @@ export const CoverPage = () => {
                         />
                     </p>
                 </div>
-                <img src={me} />
+                <img src={me} alt='picture of me' />
             </div>
         </>
     )

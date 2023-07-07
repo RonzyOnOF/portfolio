@@ -4,6 +4,8 @@
     flex-wrap: wrap;
     gap: 10px;
     width: 80%;
+    justify-content: center;
+    padding-left: 15px;
 }
 
 
