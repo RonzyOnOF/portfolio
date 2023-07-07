@@ -1,7 +1,9 @@
 .navBar {
-    padding: 30px 8%;
+    padding: 30px 12%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 #name {
@@ -12,7 +14,7 @@
 
 .list {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     color: white;
 }
 
@@ -21,3 +23,62 @@ a {
     font-size: 1.2rem;
     cursor: pointer;
 }
+
+a:hover {
+    color: rgb(35, 79, 223);
+    transition: 0.2s;
+}
+
+.toggleButton {
+    display: none;
+    position: absolute;
+    top: 42px;
+    right: 12%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 880px) {
+
+    .toggleButton {
+        display: flex;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+
+    }
+
+    .listActive {
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+    }
+
+    .listActive li {
+        text-align: center;
+        color: black;
+        position: relative;
+    }
+
+    .listActive {
+        display: flex;
+    }
+
+
+}
+
