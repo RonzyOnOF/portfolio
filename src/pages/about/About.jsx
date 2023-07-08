@@ -32,7 +32,7 @@ export const About = () => {
                     <img ref={ref} id={styles.mePicture} alt='me doing arnold pose' src={pose} />  
                     <div className={styles.aboutSkills}>
                         <div className={styles.aboutText}>
-                            <p>I'm a developer based in Texas and have a passion for creating and maintaining websites. I make ideas into functional and responsive sites. When I'm not coding, I enjoy lifting weights, learning, and looking at cars I can't afford in facebook marketplace😭.</p>
+                            <p>I'm a developer based in Texas and have a passion for creating and maintaining websites. I make ideas into functional and responsive sites. When I'm not coding, I enjoy lifting weights, learning, and looking at cars I can't afford in the facebook marketplace😭.</p>
                             <br />
                             <p>Skills:</p>
                         </div>
