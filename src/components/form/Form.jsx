@@ -11,7 +11,7 @@ export const Form = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_rqoofv9', 'template_ma6t8mf', form.current, 'bZ8OSiCno4Ta4EhEz')
+    emailjs.sendForm(import.meta.env.VITE_SERVICE_KEY, import.meta.env.VITE_TEMPLATE_KEY, form.current, import.meta.env.VITE_ID_KEY)
       .then((result) => {
           setIsEmailSent(true)
           setTimeout(() => {
@@ -22,6 +22,8 @@ export const Form = () => {
       });
     
   };
+
+  
 
   return (
 

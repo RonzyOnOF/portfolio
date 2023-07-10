@@ -20,3 +20,10 @@
     width: 9%;
     height: auto;
 }
+
+@media screen and (max-width: 280px) {
+
+    .emailConfirm {
+        right: 10px;
+    }
+}
