@@ -1,0 +1,13 @@
+
+#header {
+    text-align: center;
+    margin: auto;
+}
+
+
+@media screen and (max-width: 440px) {
+
+    #header {
+        width: 70%;
+    }
+}

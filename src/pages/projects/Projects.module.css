@@ -2,6 +2,10 @@
     margin: 150px auto;
 }
 
+#subHeader {
+    text-align: center;
+}
+
 .projectsContainer h3 {
     text-align: center;
     margin-bottom: 70px;
@@ -32,9 +36,61 @@
     justify-content: center;
     margin: 20px auto;
     gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 #project {
     border-radius: 10px;
     box-shadow: 0px 1px 4px rgba(0,0,0,0.2);
+    max-width: 100%;
 }
+
+
+#anchor {
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+    width: 120px;
+    padding: 10px 12px;
+    border-radius: 3px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+}
+
+#anchor:hover {
+    color: black;
+    background-color: white;
+    transition: 0.3s;
+}
+
+@media screen and (max-width: 1050px) {
+
+    .projectShowcaseContainer {
+        width: 80%
+    }
+}
+
+
+
+@media screen and (max-width: 1050px) {
+
+    .projectShowcaseContainer {
+        flex-direction: column;
+    }
+
+    .projectAbout {
+        width: 85%;
+    }
+
+    #project {
+        width: 90%;
+    }
+
+    a {
+        width: 90%;
+    }
+
+}
+
+
+
