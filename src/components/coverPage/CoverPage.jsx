@@ -10,7 +10,7 @@ export const CoverPage = () => {
                     <h3>Hello, I'm</h3>
                     <p id={styles.name}>Jonathan Santos</p>
                     <p id={styles.typewriter}>A<Typewriter 
-                        words={[' Web Content Editor', ' Web Developer']}
+                        words={[' Web Developer']}
                         loop={0 | false}
                         deleteSpeed={100}
                         />

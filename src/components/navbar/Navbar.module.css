@@ -62,7 +62,6 @@ a:hover {
     .navBar {
         flex-direction: column;
         align-items: flex-start;
-
     }
 
     .listActive {
@@ -75,6 +74,7 @@ a:hover {
         text-align: center;
         color: black;
         position: relative;
+        left: 6%;
     }
 
     .listActive {
