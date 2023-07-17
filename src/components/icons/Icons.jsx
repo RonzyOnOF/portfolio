@@ -7,6 +7,7 @@ import redux from '../../../public/icons/reduxIcon.png';
 import git from '../../../public/icons/gitIcon.png';
 import photoshop from '../../../public/icons/photoshopIcon.png';
 import shopify from '../../../public/icons/shopifyIcon.png';
+import wordpress from '../../../public/icons/wordpress.png';
 
 export const Icons = () => {
     return (
@@ -21,6 +22,7 @@ export const Icons = () => {
                 <img src={git} />
                 <img src={photoshop} />
                 <img src={shopify} />
+                <img src={wordpress} />
             </div>
         </>
     )
