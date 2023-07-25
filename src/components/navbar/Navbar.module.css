@@ -31,7 +31,7 @@ a:hover {
     transition: 0.2s;
 }
 
-.toggleButton {
+.hamburger {
     display: none;
     position: absolute;
     top: 42px;
@@ -47,11 +47,13 @@ a:hover {
     width: 100%;
     background-color: white;
     border-radius: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
 @media screen and (max-width: 880px) {
 
-    .toggleButton {
+    .hamburger {
         display: flex;
     }
 
@@ -64,22 +66,54 @@ a:hover {
         align-items: flex-start;
     }
 
-    .listActive {
-        flex-direction: column;
-        width: 100%;
-        background-color: white;
-    }
-
-    .listActive li {
-        text-align: center;
-        color: black;
-        position: relative;
-        left: 6%;
-    }
-
-    .listActive {
+    .list.active {
+        left: 8%;
+        top: 110px;
+        background-color: rgb(29, 48, 99);
+        position: absolute;
         display: flex;
+        flex-direction: column;
+        width: 85%;
+        border-radius: 15px;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        animation: slideOut  0.6s ease;
+        padding: 5px 0px;
     }
+
+    @keyframes slideOut {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(0);
+        }
+    }
+
+    .list.active  li {
+        text-align: center;
+    }
+
+    .list.active a {
+        color: white;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    
+
 
 
 }

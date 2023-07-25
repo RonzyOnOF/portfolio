@@ -1,44 +1,28 @@
 import styles from './Navbar.module.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 
 export const Navbar = () => {
     
     const [isClicked, setIsClicked] = useState();
-    const [width, setWidth] = useState();
 
     const toggleClick = () => {
         setIsClicked(!isClicked);
     }
 
-    const getWidth = () => {
-        return window.innerWidth;
-    }
-
-    useEffect(() => {
-        function handleResize() {
-            setWidth(getWidth());
-          }
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-    }, [])
-
-    if(isClicked && width >= 880) {
-        setIsClicked(false);
-    }
     
     
     return(
         <>
             <nav className={styles.navBar}>
                 <h1 id={styles.name}>JSDev</h1>
-                <ul className={isClicked ? styles.listActive : styles.list}>
+                <ul className={isClicked ?`${styles.list} ${styles.active}` : styles.list}>
                     <a href='#'><li>Home</li></a>
                     <a href='#about'><li>About</li></a>
                     <a href='#projects'><li>Projects</li></a>
                     <a href='#contact'><li>Contact</li></a>
                 </ul>
-                <a className={styles.toggleButton} onClick={toggleClick}>
+                <a className={isClicked ? `${styles.hamburger} ${styles.active}` : styles.hamburger} onClick={toggleClick}>
                     <span className={styles.bar}></span>
                     <span className={styles.bar}></span>
                     <span className={styles.bar}></span>
