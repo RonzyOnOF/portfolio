@@ -1,5 +1,5 @@
 import styles from './About.module.css';
-import pose from '../../../public/images/arnoldPose2.png';
+import me from '../../../public/images/mePoint-min.png';
 import { Icons } from '../../components/icons/Icons';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { useRef, useEffect } from 'react';
@@ -29,7 +29,7 @@ export const About = () => {
                     animate={controls}
                     transition={{duration: 0.5, delay: 0.35}}
                 >
-                    <img ref={ref} id={styles.mePicture} alt='me doing arnold pose' src={pose} />  
+                    <img ref={ref} id={styles.mePicture} alt='me doing arnold pose' src={me} />  
                     <div className={styles.aboutSkills}>
                         <div className={styles.aboutText}>
                             <p>I'm a developer based in Texas and have a passion for creating and maintaining websites. I make ideas into functional and responsive sites. When I'm not coding, I enjoy lifting weights, learning, and looking at cars I can't afford in the facebook marketplace😭.</p>
