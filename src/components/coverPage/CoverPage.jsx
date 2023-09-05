@@ -1,6 +1,6 @@
 import { Typewriter } from 'react-simple-typewriter'
 import styles from './CoverPage.module.css';
-import me from '../../../public/images/portfolioMe.png';
+import me from '../../../public/images/portfolioMe.webp';
 
 export const CoverPage = () => {
     return (

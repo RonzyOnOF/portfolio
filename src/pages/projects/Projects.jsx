@@ -1,6 +1,6 @@
 import styles from './Projects.module.css';
 import rent from '../../../public/thumbnails/rentThumbnail.png';
-import tech from '../../../public/thumbnails/shopifyProject.png';
+import aniroll from '../../../public/images/anirollThumb.png';
 import githubIcon from '../../../public/icons/gitbutton.png';
 import demoIcon from '../../../public/icons/demoButton.png'
 import { Project } from '../../components/project/Project';
@@ -37,6 +37,19 @@ export const Projects = () => {
                 <p id={styles.subHeader}>Click on thumbnail for live demo!</p>
                 <div className={styles.projects}>
                     <div className={styles.projectShowcaseContainer}>
+                        <a href='https://aniroll.netlify.app/' target='_blank'><img id={styles.project} src={aniroll} /></a>
+                        <div className={styles.projectAbout}>
+                            <h4>Aniroll (currently developing)</h4>
+                            <br />
+                            <p>Your one stop for anything anime related. Pick from dozens of animes where you can binge watch and enjoy or buy some sweet anime products!</p>
+                            <div className={styles.icons}>
+                                <Icon text='React'/>
+                                <Icon text='Redux'/>
+                                <Icon text='Css'/>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.projectShowcaseContainer}>
                         <a href='https://atlasgym.netlify.app/' target='_blank'><img id={styles.project} src={gym} /></a>
                         <div className={styles.projectAbout}>
                             <h4>Atlas Gym</h4>
@@ -46,17 +59,6 @@ export const Projects = () => {
                                 <Icon text='React'/>
                                 <Icon text='Css'/>
                                 <a id={styles.anchor} href='https://github.com/RonzyOnOF/atlasgym' target='_blank'>Code</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.projectShowcaseContainer}>
-                        <a href='https://jonathantech.myshopify.com/' target='_blank'><img id={styles.project} src={tech} /></a>
-                        <div className={styles.projectAbout}>
-                            <h4>JohnTech</h4>
-                            <br />
-                            <p>If your in need of a pc, then look no futher because at JohnTech we got all the parts necessary to get your dream build going.</p>
-                            <div className={styles.icons}>
-                                <Icon text='Shopify'/>
                             </div>
                         </div>
                     </div>
