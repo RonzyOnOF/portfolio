@@ -46,6 +46,7 @@ export const Projects = () => {
                                 <Icon text='React'/>
                                 <Icon text='Redux'/>
                                 <Icon text='Css'/>
+                                <a id={styles.anchor} href='https://github.com/RonzyOnOF/aniroll' target='_blank'>Code</a>
                             </div>
                         </div>
                     </div>
